@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Laila:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <a>Home</a>
+            <a>About Me</a>
+            <a>Projects</a>
+            <a>Contact</a>
+        </div>
+        <!--Hero Section-->
+        <div class="c1-outer">
+            <div class="c1">
+              <div class="left-c1">
+                <h2>Hello, I'm Niloy Ghosh</h2>
+                <p>Boost your JEE Mains, WBJEE, and NEET preparation with expert guidance in Mathematics, Physics, for exam success.</p>
+                <h2></h2>
+                <button type="button" class="about">About Me</button>                
+              </div>
+              <div class="right-c1">
+                <img class="l1" src="https://clipground.com/images/physics-logo-9.png">
+                <img class="l2" src="https://cdn2.iconfinder.com/data/icons/science-13/24/Relativity-1024.png">
+                <img class="l3" src="https://cdn3.iconfinder.com/data/icons/science-indigo-vol-1/256/Artificial_Intelligence-1024.png">
+                <img class="l4" src="https://static-00.iconduck.com/assets.00/multiply-icon-991x1024-f6awf0h9.png">
+                <div class="right-c1-image">
+                  <img src="niloy ghosh.png" alt="Niloy Ghosh">
+                </div>
+              </div>
+            </div>
+            <div class="features">
+              <div class="feature">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h4>Personalized Learning Plans</h4>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-bolt"></i>
+                <h4>Exam-Focused Strategies</h4>
+              </div>
+              <div class="feature">
+                <i class="fa-brands fa-slack"></i>
+                <h4>Interactive Problem Solving</h4>
+              </div>
+              <div class="feature">
+                <i class="fa-solid fa-bars-progress"></i>
+                <h4>Continuous Progress Tracking</h4>
+              </div>
+            </div>
+        </div>
+        <div class="c2">
+          <div class="aboutMe">
+            <div class="lAbout">
+              <div class="aboutImage">
+                <img src="Screenshot 2024-09-23 230536.png" alt="">
+              </div>
+            </div>
+            <div class="rAbout">
+              <div class="hAbout">
+                <p>About Me</p>
+              </div>
+              <p class="t1">Unlock Your Potential with<br><span>Expert Guidance</span> & <span>Proven Success</span></p>
+              <p class="t2">I hold a degree in Mechanical Engineering from Jadavpur University, Kolkata, and am currently pursuing a PhD in Aerospace and Applied Mechanics at IIEST, with previous experience as a scientist at ISRO.</p>
+              <button class="contactBtn">Contact  Me&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="c3">
+          <h3>Subjects Taught</h3>
+          <div class="subjects">
+            <div class="subject">
+              <i class="fa-solid fa-cubes"></i>
+              <p>Physics for classes 9 to 12 exclusively preparing for JEE Mains, WBJEE and NEET</p>
+            </div>
+            <div class="subject">
+              <i class="fa-solid fa-brain"></i>
+              <p>Artificial Intelligence(AI) & Machine Learning(ML) using python for beginers</p>
+            </div>
+          </div>
+        </div>
+      <!-- Chatbot -->
+      <button class="chatbot-button" id="chatbot-button">
+        <i class="fa-solid fa-headset"></i>
+      </button>
+      <!-- Chatbot Window -->
+      <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+          AI Assistant&nbsp;
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div class="chatbot-input">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Ask your query here..."
+          />
+          <div class="chatsubmit">
+            <button id="send-button">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="loader" id="loader" style="display: none"></div>
+          </div>
+        </div>
+      </div>
+      <!--Chatbot End-->
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+  ></script>
+  <script src="chatbot.js"></script>
+  <script src="script.js"></script>
+</html>
