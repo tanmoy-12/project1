@@ -44,6 +44,9 @@
       href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -52,103 +55,230 @@
         <!--Navigation Bar-->
         <div class="navbar">
             <a>Home</a>
-            <a>About Me</a>
+            <a>About</a>
             <a>Projects</a>
             <a>Contact</a>
+            <a href="" style="position: absolute; right: 5px;"><button id="login"><i class="fa-regular fa-user"></i>&nbsp;Login/Register</button></a>
         </div>
         <!--Hero Section-->
         <div class="c1-outer">
             <div class="c1">
               <div class="left-c1">
-                <h2>Hello, I'm Niloy Ghosh</h2>
-                <p>Boost your JEE Mains, WBJEE, and NEET preparation with expert guidance in Mathematics, Physics, for exam success.</p>
+                <h1>Empowering Aspirants with Expert Coaching for JEE, WBJEE, and NEET</h1>
+                <p>Personalized Learning, Proven Strategies, and Continuous Support to Help You Achieve Your Dream Scores.</p>
                 <h2></h2>
-                <button type="button" class="about">About Me</button>                
+                <button type="button" class="about">Explore All Courses</button>                
               </div>
               <div class="right-c1">
-                <img class="l1" src="https://clipground.com/images/physics-logo-9.png">
-                <img class="l2" src="https://cdn2.iconfinder.com/data/icons/science-13/24/Relativity-1024.png">
-                <img class="l3" src="https://cdn3.iconfinder.com/data/icons/science-indigo-vol-1/256/Artificial_Intelligence-1024.png">
-                <img class="l4" src="https://static-00.iconduck.com/assets.00/multiply-icon-991x1024-f6awf0h9.png">
-                <div class="right-c1-image">
-                  <img src="niloy ghosh.png" alt="Niloy Ghosh">
+                <div class="i2">
+                  <img src="https://img.freepik.com/premium-photo/young-asian-indian-college-students-reading-books-studying-laptop-preparing-exam-working-group-project-while-sitting-grass-staircase-steps-college-campus_466689-7729.jpg" alt="">
                 </div>
-              </div>
-            </div>
-            <div class="features">
-              <div class="feature">
-                <i class="fa-solid fa-chalkboard-user"></i>
-                <h4>Personalized Learning Plans</h4>
-              </div>
-              <div class="feature">
-                <i class="fa-solid fa-bolt"></i>
-                <h4>Exam-Focused Strategies</h4>
-              </div>
-              <div class="feature">
-                <i class="fa-brands fa-slack"></i>
-                <h4>Interactive Problem Solving</h4>
-              </div>
-              <div class="feature">
-                <i class="fa-solid fa-bars-progress"></i>
-                <h4>Continuous Progress Tracking</h4>
+                <div class="i1">
+                  <img src="https://img.freepik.com/free-photo/young-man-student-with-notebooks-showing-thumb-up-approval-smiling-satisfied-blue-studio-background_1258-65597.jpg" alt="">
+                </div>
+                <img class="i3" src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7819204/yellow-circle-clipart-md.png" alt="">
               </div>
             </div>
         </div>
+        <!---------------------Features--------------------->
+        <div class="features">
+          <div class="feature">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h4>Personalized Learning Plans</h4>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-bolt"></i>
+            <h4>Exam-Focused Strategies</h4>
+          </div>
+          <div class="feature">
+            <i class="fa-brands fa-slack"></i>
+            <h4>Interactive Problem Solving</h4>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-bars-progress"></i>
+            <h4>Continuous Progress Tracking</h4>
+          </div>
+        </div>
+        <!-------------------Subjects--------------------------->
         <div class="c2">
+          <h3>Subjects Taught</h3>
+          <div class="subjects">
+            <div class="subject" id="s1">
+              <img class="i4" src="https://www.pngrepo.com/png/157402/512/physics.png" alt="">
+              <p>Physics for classes 9 to 12 exclusively preparing for JEE Mains, WBJEE and NEET</p>
+              <a href="Sample notes physics.pdf"><button>View Sample Notes&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+            <div class="subject" id="s2">
+              <img src="https://www.mowob.com/images/ai-ml-icons.png" alt="">
+              <p>Artificial Intelligence(AI) & Machine Learning(ML) using python for beginers</p>
+              <a href="sample notes AI.pdf"><button>View Sample Notes&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+          </div>
+        </div>
+        <!-----------------------About Me------------------------>
+        <div class="c3">
           <div class="aboutMe">
             <div class="lAbout">
               <div class="aboutImage">
-                <img src="Screenshot 2024-09-23 230536.png" alt="">
+                <img src="niloy.png" alt="">
               </div>
             </div>
             <div class="rAbout">
-              <div class="hAbout">
-                <p>About Me</p>
+              <div class="select">
+                <div class="hAbout active" onclick="showContent('about')">
+                  <p>About Me</p>
+                </div>
+                <div class="hAbout" onclick="showContent('qualifications')">
+                  <p>Qualifications</p>
+                </div>
+                <div class="hAbout" onclick="showContent('publications')">
+                  <p>Publications</p>
+                </div>
               </div>
-              <p class="t1">Unlock Your Potential with<br><span>Expert Guidance</span> & <span>Proven Success</span></p>
-              <p class="t2">I hold a degree in Mechanical Engineering from Jadavpur University, Kolkata, and am currently pursuing a PhD in Aerospace and Applied Mechanics at IIEST, with previous experience as a scientist at ISRO.</p>
-              <button class="contactBtn">Contact  Me&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+              
+              <div class="content">
+                <!-- About Me Content -->
+                <div class="details" id="about">
+                  <p class="t1">Unlock Your Potential with<br><span>Expert Guidance</span> & <span>Proven Success</span></p>
+                  <p class="t2">
+                    Started career in ISRO as a Scientist (2006-2011). Contributed in the design of upper Cryogenic stage of GSLV Rocket. 
+                    Joined Aircraft Research and Design complex, HAL as senior manager (2011-2016), Aircraft Wing Design. 
+                    Contributed to design of Wing and Empennage of Fighter and Trainer Aircrafts. Founded DSN Aerospace in 2013. 
+                    Presently working on 8 projects under DSN Aerospace on National Level. Signed MOU with MSME Tool Room 
+                    Kolkata for imparting training to Engineering college students. Joined Rolls Royce Corporation, UK, for short duration.
+                  </p>
+                  <button class="contactBtn">Contact Me&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              
+                <!-- Qualifications Content -->
+                <div class="qualifications" id="qualifications" style="display: none;">
+                  <h2>Qualifications</h2>
+                  <li>ME in Mechanical Engineering from Jadavpur University, Kolkata</li>
+                  <li>Pursuing PhD in Aerospace & Applied Mechanics from IIEST</li>
+                  <li>Ex-ISRO Scientist</li>
+                  <li>Ex-Deputy Manager ARDC HAL, Bangalore</li>
+                  <li>Ex-Team Lead, Rolls Royce Engine Division</li>
+                </div>
+              
+                <!-- Publications Content -->
+                <div class="publications" id="publications" style="display: none;">
+                  <h2>Publications in International Journals </h2>
+                  <li>Niloy Ghosh & Prasanta Sahoo, Finite element contact analysis of Fractal surfaces. Journal of Physics D: Appl. Phys. 40 (2007) 4245-4252.</li>
+                  <li>Masud Rana, Jayanta Kumar Biswas, Sandipan Roy, Niloy Ghosh, Shambo Bhattacharya, Santanu Kumar Karmakar, Amit Roychowdhury, Measurement of strain in the rod for lumbar pedicle screw fixation: An experimental and finite element study, Biomed Phys Eng Express, 2020 Nov 10;6(6)</li>
+                  <li>N. Ghosh, N. De, J. Choudhury, A. R. (2023). Experimentation and mathematical modelling of process parameters for prevention of infectious disease caused by Staphylococcus aureus bacteria in indoor environment.Water, Air, & Amp; Soil Pollution, 234(5), 317.</li>
+                  <li>N. Ghosh, N. De, J. & Chowdhury, A. R. (2024). Shelf life enhancement technique of Musa acuminata in a controlled environment and optimization of process parameters affecting shelf life using genetic algorithm. Journal of Food Science, 89(1), 390-403.</li>
+                  <li>N. Ghosh, N. De, J. & Choudhury, A. R. (2024). Efficacy improvement technique of air-filtration unit affected by bio fouling using electroless Ni-Cu-P coating. Accepted in Indian Journal of Chemical Technology.</li>
+                  <h2>Publications in National Conferences</h2>
+                  <li>Niloy Ghosh & Prasanta Sahoo, Finite element analysis of Elastic contact of MEMS INTERFACES, Proc. Nat. Conf. on emerging trends in Nanotechnology and Innovations in Design and Manufacturing (ETNDM-2006), NIT Rourkela,2006,32-42.</li>
+                  <li>Niloy Ghosh & Prasanta Sahoo, Finite element analysis of Elastic-Plastic Contact of Fractal Surfaces. Proc. 2nd Int. Congress on Computational Mechanics and Simulation (ICCMS-06), IIT Guwahati, 2006.</li>
+                  <li>Niloy Ghosh & Prasanta Sahoo, Computer aided synthesis of 3D Fractal Surface for contact analysis., Proc. All India Seminar on Advances in Product Design, Allahabad, 2006, Paper no.3 (1-9).</li>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
-        <div class="c3">
-          <h3>Subjects Taught</h3>
-          <div class="subjects">
-            <div class="subject">
-              <i class="fa-solid fa-cubes"></i>
-              <p>Physics for classes 9 to 12 exclusively preparing for JEE Mains, WBJEE and NEET</p>
+        <!------------------Patents------------->
+        <div class="c4">
+          <h2>My Patents</h2>
+          <div class="patents">
+            <div class="patent">
+              <img src="patent1.png" alt="patent1">
             </div>
-            <div class="subject">
-              <i class="fa-solid fa-brain"></i>
-              <p>Artificial Intelligence(AI) & Machine Learning(ML) using python for beginers</p>
+            <div class="patent">
+              <img src="patent2.png" alt="patent2">
+            </div>
+            <div class="patent">
+              <img src="patent3.png" alt="patent3">
             </div>
           </div>
         </div>
-      <!-- Chatbot -->
-      <button class="chatbot-button" id="chatbot-button">
-        <i class="fa-solid fa-headset"></i>
-      </button>
-      <!-- Chatbot Window -->
-      <div class="chatbot-window" id="chatbot-window">
-        <div class="chatbot-header">
-          AI Assistant&nbsp;
+        <!------------------Contact Section-------------->     
+        <div class="c5">
+          <h2>Have A Doubt? Ask Here</h2>
+          <form action="" class="contactForm">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email">
+            <label for="class">Class</label>
+            <input type="text" placeholder="Class">
+            <label for="message">Message</label>
+            <textarea placeholder="Your message"></textarea>
+            <button type="button">Submit</button>
+          </form>
         </div>
-        <div class="chatbot-messages" id="chatbot-messages"></div>
-        <div class="chatbot-input">
-          <input
-            type="text"
-            id="user-input"
-            placeholder="Ask your query here..."
-          />
-          <div class="chatsubmit">
-            <button id="send-button">
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
-            <div class="loader" id="loader" style="display: none"></div>
+        <!------------------FAQ Section-------------->
+        <div class="c6">
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(0)">
+                <span>What subjects do you teach?</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                I teach Physics for competitive exams like JEE, WBJEE, and NEET & Artificial Intelligence(AI) & Machine Learning(ML) using python.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(1)">
+                <span>How can I schedule a class?</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                You can schedule a class through our website by selecting available time slots on the booking page.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(2)">
+                <span>Do you provide personalized study plans?</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Yes, each student gets a personalized study plan based on their strengths and weaknesses.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(3)">
+                <span>How do you help students with exam preparation?</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                I focus on exam-focused strategies, problem-solving techniques, and time management skills tailored to the exams.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(4)">
+                <span>Can I get a trial class before enrolling?</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Yes, we offer a free trial class to help you decide if the teaching method suits your needs.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFaq(5)">
+                <span>What are the fees for your courses?</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                The fee structure depends on the course and subject you choose. Contact us for more details.
+              </div>
+            </div>
           </div>
+        </div>   
+        <!------------------Footer Section-------------->     
+        <div class="footer">
+          <h5>Follow Us On</h5>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/niloy-ghosh-71a9a7a5/"><div class="social"><i class="fa-brands fa-linkedin"></i></div></a>
+            <a href=""><div class="social"><i class="fa-brands fa-facebook"></i></div></a>
+            <a href=""><div class="social"><i class="fa-brands fa-instagram"></i></div></a>
+          </div>
+          <div class="line"></div>
+          <p>All Rights Reserved&nbsp;<i class="fa-regular fa-copyright"></i>&nbsp;2024</p>
         </div>
-      </div>
-      <!--Chatbot End-->
     </div>
   </body>
   <script
